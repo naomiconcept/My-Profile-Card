@@ -10,6 +10,7 @@
 
 body{
     background: #f06c9b;
+    overflow-x: hidden;
 }
 
 .header{
