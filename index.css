@@ -61,7 +61,7 @@ body{
 
 .home-image {
     flex: 1; 
-    background: url('headshot.JPG') no-repeat right;
+    background: url('headshot.JPG') no-repeat center;
     background-size: contain;
     width: 40vw;
     height: 80vh;
