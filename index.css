@@ -10,7 +10,6 @@
 
 body{
     background: #f06c9b;
-    overflow-x: hidden;
 }
 
 .header{
@@ -49,18 +48,23 @@ body{
 }
 
 .home{
-    height: 100vh;
-    margin: 0;
-    background: url('headshot.jpg') no-repeat;
-    background-size: contain;
-    background-position: right;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    height: 100vh;
     padding: 0 10%;
 }
 
 .home-content{
-    max-width: 600px;
+    max-width: 50%;
+}
+
+.home-image {
+    flex: 1; 
+    background: url('headshot.JPG') no-repeat right;
+    background-size: contain;
+    width: 40vw;
+    height: 80vh;
 }
 
 .home-content h1{
@@ -99,9 +103,8 @@ body{
 .home-sci{
     position: absolute;
     bottom: 40px;
-    width: 170px;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
 
 }
 
@@ -141,6 +144,51 @@ body{
 
 .home-sci a:hover::before{
     width: 100%;
+}
 
+/* ========== MEDIA QUERIES FOR SMALL SCREENS ========== */
+@media (max-width: 1024px) {
+    .home {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        padding: 5%;
+    }
 
+    .home-content {
+        max-width: 100%; /* Full width */
+    }
+
+    .home-image {
+        width: 60vw;
+        height: 50vh;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 600px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .home-content {
+        max-width: 90%;
+    }
+
+    .home-image {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
 }
