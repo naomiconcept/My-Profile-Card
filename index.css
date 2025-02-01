@@ -48,23 +48,37 @@ body{
 }
 
 .home{
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
     padding: 0 10%;
+    background: url('headshot.JPG') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    color: white; 
 }
 
 .home-content{
     max-width: 50%;
-}
-
-.home-image {
-    flex: 1; 
-    background: url('headshot.JPG') no-repeat center;
-    background-size: contain;
-    width: 40vw;
-    height: 80vh;
+    padding-top: 18vh;
 }
 
 .home-content h1{
@@ -81,16 +95,16 @@ body{
 }
 
 .home-content h4{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
-    color: #1f2041;
+    color: #303264;
     line-height: 1.6;
 }
 
 .home-content h5{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
-    color: #503d3f;
+    color: #c7acaf;
     line-height: 1.6;
 }
 
@@ -158,7 +172,7 @@ body{
         max-width: 100%; /* Full width */
     }
 
-    .home-image {
+    .profilePicture {
         width: 60vw;
         height: 50vh;
         background-size: contain;
@@ -177,7 +191,7 @@ body{
         max-width: 90%;
     }
 
-    .home-image {
+    .profilePicture {
         width: 90vw;
         height: 40vh;
     }
