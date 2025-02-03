@@ -6,6 +6,7 @@
     <title>Profile Card  Anjolaoluwa Fajinmi</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/c55f92aaea.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -16,28 +17,28 @@
             <a href="index.html">Home</a>
             <a href="#">Services</a>
             <a href="https://drive.google.com/file/d/17xjqKsLn61fd8XJyNAMa26GIloAM02xx/view?usp=sharing">Portolio</a>
-            <a href="https://mail.google.com/mail/u/0/#inbox">Contact</a>
+            <a href="mailto:anjolafajinmi@gmail.com">Contact</a>
         </nav>
     </header>
 
-    <section class="home">
+    <section class="home" data-testid="profilePicture">
         <div class="home-content">
-            <h1>Hi, I'm Anjolaoluwa Fajinmi</h1>
-            <h3>Frontend Developer</h3>
-            <h4>anjolafajinmi@gmail.com</h4>
-            <h5>Lagos, Nigeria.</h5>
-            <p>A creative frontend developer with a passion for crafting visually engaging and functional websites. 
+            <h1 data-testid="fullName">Hi, I'm Anjolaoluwa Fajinmi</h1>
+            <h3 data-testid="jobTitle">Frontend Developer</h3>
+            <h4 data-testid="emailAddress">anjolafajinmi@gmail.com</h4>
+            <h5 data-testid="currentLocation">Lagos, Nigeria.</h5>
+            <p data-testid="shortBio">A creative frontend developer with a passion for crafting visually engaging and functional websites. 
                I write JavaScript, Python, Three.js, and a bit of React. 
             Whether it's designing seamless user experiences or optimizing website performance, I thrive on solving challenges and delivering top-notch solutions!</p>
             
         </div>
-        <div class="profilePicture" data-testid="profilePicture"></div>
 
-        <div class="home-sci">
+        <div class="home-sci" data-testid="socialLinks">
             <a href="https://linkedin.com/in/anjolaoluwa-fajinmi-41a941235"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/naomiconcept"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.instagram.com/jolaaoluwa/"><i class="fa-brands fa-instagram"></i></a>
         </div>
+        <p id="currentTime" data-testid="currentTimeUTC"></p>
     </section>
     
 </body>
