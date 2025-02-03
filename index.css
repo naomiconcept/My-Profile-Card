@@ -97,7 +97,7 @@ body{
 .home-content h4{
     font-size: 17px;
     font-weight: 700;
-    color: #ededed;
+    color: #558dcd;
     line-height: 1.6;
 }
 
@@ -160,6 +160,18 @@ body{
 
 .home-sci a:hover::before{
     width: 100%;
+}
+
+#currentTime{
+    position: fixed;
+    bottom: 1px;
+    right: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+  
 }
 
 /* ========== MEDIA QUERIES FOR SMALL SCREENS ========== */
